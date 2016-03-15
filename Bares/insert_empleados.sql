@@ -1,0 +1,1 @@
+﻿INSERT INTO Empleados (CodE, Nombre, Sueldo) values (1, 'Prudencio Caminero', 120000), (2, 'Vicente Merario', 110000), (3, 'Valentin Siempre', 100000)

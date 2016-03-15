@@ -1,0 +1,1 @@
+﻿insert into bares (CodB, Nombre, Cif, Localidad) values (001,'Stop', '11111111X', 'Villa Botijo'), (002,'Las Vegas', '22222222Y', 'Villa Botijo'), (003, 'Club Social', '','Las Ranas'), (004,'Otra Ronda', '33333333Z', 'La Esponja')

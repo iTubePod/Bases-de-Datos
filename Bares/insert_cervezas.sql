@@ -1,0 +1,1 @@
+﻿insert into cervezas (CodC, Envase, Capacidad, Stock) values (01, 'Botella', 0.2, 3600), (02, 'Botella', 0.33, 1200), (03, 'Lata', 0.33, 2400), (04, 'Botella', 1, 288), (05, 'Barril', 60, 30)

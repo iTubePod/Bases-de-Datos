@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architect-project version="1.0" appversion="1.0.7">
+ <project-name>tarea1</project-name>
+ <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
+ <project-data-sources>
+  <data-source id="DS0">
+   <property key="Logical" value="PlayPen Database" />
+  </data-source>
+ </project-data-sources>
+ <source-databases>
+ </source-databases>
+ <target-database id="ppdb" dbcs-ref="DS0">
+  <table id="TAB1" populated="true" UUID="26bb1c79-4edf-4d26-bec1-a9241f43c781" name="Seguro_Hogar" objectType="TABLE" physicalName="Seguro_Hogar" >
+   <remarks></remarks>
+   <folder id="FOLTAB11" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL2" populated="true" UUID="1100aebb-f951-4962-9596-a68c8f6a955f" autoIncrement="false" autoIncrementSequenceName="Seguro_Hogar_SH_ID_seq" defaultValue="" name="SH_ID" nullable="0" physicalName="SH_ID" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL3" populated="true" UUID="c523ca2c-ea09-4e5e-ae9e-982f3c0228ca" autoIncrement="false" autoIncrementSequenceName="Seguro_Hogar_Valor_seq" defaultValue="" name="Valor" nullable="0" physicalName="Valor" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL4" populated="true" UUID="25d87f75-f8e0-4637-b692-fb746ba940ab" autoIncrement="false" autoIncrementSequenceName="Seguro_Hogar_Contenido_seq" defaultValue="" name="Contenido" nullable="0" physicalName="Contenido" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL5" populated="true" UUID="3df7e211-bee7-4fa9-8781-554eb3314cf6" autoIncrement="false" autoIncrementSequenceName="Seguro_Hogar_Riesgos_seq" defaultValue="" name="Riesgos" nullable="0" physicalName="Riesgos" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL6" populated="true" UUID="2e62743d-ca82-4110-9af3-431dc3af99c0" autoIncrement="false" autoIncrementSequenceName="Seguro_Hogar_Prima_seq" defaultValue="" name="Prima" nullable="0" physicalName="Prima" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB13" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB12" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB14" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX7" populated="true" UUID="64e5a968-2656-4186-9216-70068ac8ac20" clustered="false" name="SH_ID_pk" physicalName="SH_ID_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC8" populated="true" UUID="a62b7dc6-3412-4daa-badf-b1416886b9cd" ascendingOrDescending="UNSPECIFIED" column-ref="COL2" name="SH_ID" physicalName="SH_ID" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB9" populated="true" UUID="bd6056fd-9f58-41e2-910d-e04518765b46" name="Contrato_seguro_hogar" objectType="TABLE" physicalName="Contrato_seguro_hogar" >
+   <remarks></remarks>
+   <folder id="FOLTAB91" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL10" populated="true" UUID="3bf22a12-641c-4df0-a676-9aeaca95255b" autoIncrement="false" autoIncrementSequenceName="Seguro_Hogar_SH_ID_seq" defaultValue="" name="SH_ID" nullable="0" physicalName="SH_ID" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL11" populated="true" UUID="2b166892-2149-4bb8-8a33-ffc52678b7d5" autoIncrement="false" autoIncrementSequenceName="Cliente_IFE_Cliente_seq" defaultValue="" name="IFE_Cliente" nullable="0" physicalName="IFE_Cliente" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL12" populated="true" UUID="6db353db-6cb5-4825-91a3-173ce7a79a6e" autoIncrement="false" autoIncrementSequenceName="Agente_IFE_Agente_seq" defaultValue="" name="IFE_Agente" nullable="0" physicalName="IFE_Agente" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL13" populated="true" UUID="ab7fc6d2-4b38-4ecf-b079-01db5061c8a1" autoIncrement="false" autoIncrementSequenceName="Contrato_seguro_hogar_Fecha_seq" defaultValue="" name="Fecha" nullable="0" physicalName="Fecha" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL14" populated="true" UUID="c0dfc09c-8ba6-43ad-b5b0-1ccf8bc8e485" autoIncrement="false" autoIncrementSequenceName="Contrato_seguro_hogar_Direccion_seq" defaultValue="" name="Direccion" nullable="0" physicalName="Direccion" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB93" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB92" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB94" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX15" populated="true" UUID="b0865ec0-32d6-4869-928a-2c173ee9dcf1" clustered="false" name="SH_ID" physicalName="SH_ID" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC16" populated="true" UUID="67a55593-644f-4d3c-8686-1bcb3ee32265" ascendingOrDescending="UNSPECIFIED" column-ref="COL10" name="SH_ID" physicalName="SH_ID" />
+     <index-column id="IDC17" populated="true" UUID="5b7b1fc5-bc69-4202-8c35-84abdcf38fa2" ascendingOrDescending="UNSPECIFIED" column-ref="COL11" name="IFE_Cliente" physicalName="IFE_Cliente" />
+     <index-column id="IDC18" populated="true" UUID="eead212b-c03f-40d2-957c-79275d5da54e" ascendingOrDescending="UNSPECIFIED" column-ref="COL12" name="IFE_Agente" physicalName="IFE_Agente" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB19" populated="true" UUID="6b8b6c7e-1690-45fc-9fe1-9958ddab3b8b" name="Cliente" objectType="TABLE" physicalName="Cliente" >
+   <remarks></remarks>
+   <folder id="FOLTAB191" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL20" populated="true" UUID="43daa9c4-3f6d-4929-bf93-1c9c7ea04142" autoIncrement="false" autoIncrementSequenceName="Cliente_IFE_Cliente_seq" defaultValue="" name="IFE_Cliente" nullable="0" physicalName="IFE_Cliente" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL21" populated="true" UUID="8525380a-f3c7-498a-942c-407d4d911a4c" autoIncrement="false" autoIncrementSequenceName="Cliente_Nombre_seq" defaultValue="" name="Nombre" nullable="0" physicalName="Nombre" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL22" populated="true" UUID="7648af0f-66fc-4e50-9abb-62e4f0ee7972" autoIncrement="false" autoIncrementSequenceName="Cliente_Direccion_seq" defaultValue="" name="Direccion" nullable="0" physicalName="Direccion" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL23" populated="true" UUID="78791822-2f2a-46f7-85ec-1104303885c5" autoIncrement="false" autoIncrementSequenceName="Cliente_Telefono_seq" defaultValue="" name="Telefono" nullable="0" physicalName="Telefono" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB193" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB192" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB194" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX24" populated="true" UUID="7a01f671-6c84-4095-9bb4-acdf1ccf8c89" clustered="false" name="Cliente_pk" physicalName="Cliente_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC25" populated="true" UUID="6994b8d4-f01c-402b-80ae-2800c78145b9" ascendingOrDescending="UNSPECIFIED" column-ref="COL20" name="IFE_Cliente" physicalName="IFE_Cliente" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB26" populated="true" UUID="7dba5aaf-8aa6-4fc9-af26-a6489ea0f876" name="Agente" objectType="TABLE" physicalName="Agente" >
+   <remarks></remarks>
+   <folder id="FOLTAB261" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL27" populated="true" UUID="2f07071f-b182-4e8f-818e-da0d4c64d383" autoIncrement="false" autoIncrementSequenceName="Agente_IFE_Agente_seq" defaultValue="" name="IFE_Agente" nullable="0" physicalName="IFE_Agente" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL28" populated="true" UUID="348e0ce8-8629-4f91-89ca-f285ab441069" autoIncrement="false" autoIncrementSequenceName="Agente_Nombre_seq" defaultValue="" name="Nombre" nullable="0" physicalName="Nombre" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL29" populated="true" UUID="73261f76-57e9-4a90-9366-a2a29d13b578" autoIncrement="false" autoIncrementSequenceName="Agente_Direccion_seq" defaultValue="" name="Direccion" nullable="0" physicalName="Direccion" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL30" populated="true" UUID="4b57f64d-66b9-44b8-bb80-dae2b9daa993" autoIncrement="false" autoIncrementSequenceName="Agente_Telefono_seq" defaultValue="" name="Telefono" nullable="0" physicalName="Telefono" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB263" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB262" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB264" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX31" populated="true" UUID="0c131d06-8aff-460b-8478-8faa4bd7664a" clustered="false" name="Agente_pk" physicalName="Agente_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC32" populated="true" UUID="c30fac27-2574-4c50-88ca-ce5dfac7ef43" ascendingOrDescending="UNSPECIFIED" column-ref="COL27" name="IFE_Agente" physicalName="IFE_Agente" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB33" populated="true" UUID="30d1d7b3-e462-4af8-8f0a-d84f1a3af9c9" name="Seguro_Vida" objectType="TABLE" physicalName="Seguro_Vida" >
+   <remarks></remarks>
+   <folder id="FOLTAB331" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL34" populated="true" UUID="3a6c4575-3306-411d-8b87-1d292ace4040" autoIncrement="false" autoIncrementSequenceName="Seguro_Vida_SV_ID_seq" defaultValue="" name="SV_ID" nullable="0" physicalName="SV_ID" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL35" populated="true" UUID="c48a3530-558e-42b9-8f15-c234ff6d082f" autoIncrement="false" autoIncrementSequenceName="Seguro_Vida_Edad_seq" defaultValue="" name="Edad" nullable="0" physicalName="Edad" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL36" populated="true" UUID="c22eb578-fe0f-4d02-a47e-6d0663e7a1f5" autoIncrement="false" autoIncrementSequenceName="Seguro_Vida_Profesion_seq" defaultValue="" name="Profesion" nullable="0" physicalName="Profesion" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL37" populated="true" UUID="bfaf2798-8e53-4af0-bc59-b1515b6daca1" autoIncrement="false" autoIncrementSequenceName="Seguro_Vida_Cobertura_seq" defaultValue="" name="Cobertura" nullable="0" physicalName="Cobertura" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL38" populated="true" UUID="ee3229b7-e9ed-48d8-8b92-0211ebaa2b8b" autoIncrement="false" autoIncrementSequenceName="Seguro_Vida_Prima_seq" defaultValue="" name="Prima" nullable="0" physicalName="Prima" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB333" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB332" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB334" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX39" populated="true" UUID="bca7f9ce-9aae-4b76-a8c3-945e64d6720f" clustered="false" name="Seguro_Vida_pk" physicalName="Seguro_Vida_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC40" populated="true" UUID="7bc2c072-b458-4e9e-9c18-4e279fc1b285" ascendingOrDescending="UNSPECIFIED" column-ref="COL34" name="SV_ID" physicalName="SV_ID" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB41" populated="true" UUID="c2bf972e-62b8-4481-87b8-9d7be5b208c2" name="Contrato_Seguro_Vida" objectType="TABLE" physicalName="Contrato_Seguro_Vida" >
+   <remarks></remarks>
+   <folder id="FOLTAB411" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL42" populated="true" UUID="9c5e6493-a653-4cff-ac32-3b974cac7777" autoIncrement="false" autoIncrementSequenceName="Seguro_Vida_SV_ID_seq" defaultValue="" name="SV_ID" nullable="0" physicalName="SV_ID" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL43" populated="true" UUID="434c9f3e-3ebf-4d82-a283-035403a27b97" autoIncrement="false" autoIncrementSequenceName="Cliente_IFE_Cliente_seq" defaultValue="" name="IFE_Cliente" nullable="0" physicalName="IFE_Cliente" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL44" populated="true" UUID="14920bd7-0a09-4981-a114-a41628eac63f" autoIncrement="false" autoIncrementSequenceName="Agente_IFE_Agente_seq" defaultValue="" name="IFE_Agente" nullable="0" physicalName="IFE_Agente" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL45" populated="true" UUID="e19d1205-26f9-4510-b60d-04668d6c914d" autoIncrement="false" autoIncrementSequenceName="Contrato_Seguro_Vida_Fecha_seq" defaultValue="" name="Fecha" nullable="0" physicalName="Fecha" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL46" populated="true" UUID="65206897-bf2f-43f4-a7d3-5c7fce1963d7" autoIncrement="false" autoIncrementSequenceName="Contrato_Seguro_Vida_Beneficiario_seq" defaultValue="" name="Beneficiario" nullable="0" physicalName="Beneficiario" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB413" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB412" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB414" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX47" populated="true" UUID="cbb72cbe-3759-459f-bc76-6d29d99759c5" clustered="false" name="Contrato_Seguro_Vida_pk" physicalName="Contrato_Seguro_Vida_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC48" populated="true" UUID="55766870-d89d-4633-b2fd-9725e1c04799" ascendingOrDescending="UNSPECIFIED" column-ref="COL42" name="SV_ID" physicalName="SV_ID" />
+     <index-column id="IDC49" populated="true" UUID="5e09f014-62ed-4f4a-a0d2-ac6ff5ec63c6" ascendingOrDescending="UNSPECIFIED" column-ref="COL43" name="IFE_Cliente" physicalName="IFE_Cliente" />
+     <index-column id="IDC50" populated="true" UUID="75848922-6811-4572-8f02-60a656835015" ascendingOrDescending="UNSPECIFIED" column-ref="COL44" name="IFE_Agente" physicalName="IFE_Agente" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB51" populated="true" UUID="084ed62b-2c85-499d-8de7-7c033c5cdebd" name="Seguro_Auto" objectType="TABLE" physicalName="Seguro_Auto" >
+   <remarks></remarks>
+   <folder id="FOLTAB511" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL52" populated="true" UUID="7342d351-c2d5-4a01-8ef8-92b7cf0ac778" autoIncrement="false" autoIncrementSequenceName="Seguro_Auto_SA_ID_seq" defaultValue="" name="SA_ID" nullable="0" physicalName="SA_ID" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL53" populated="true" UUID="5fc9e1b5-ffb4-48d5-8ca7-5e0f5ac7f45f" autoIncrement="false" autoIncrementSequenceName="Seguro_Auto_Categoria_seq" defaultValue="" name="Categoria" nullable="0" physicalName="Categoria" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL54" populated="true" UUID="1190a711-04df-46ed-9a2a-0d3fa23fe840" autoIncrement="false" autoIncrementSequenceName="Seguro_Auto_Antiguedad_seq" defaultValue="" name="Antiguedad" nullable="0" physicalName="Antiguedad" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL55" populated="true" UUID="3c6c3a37-f9a1-4422-a38c-440a5d89b99c" autoIncrement="false" autoIncrementSequenceName="Seguro_Auto_Edad del cnductor_seq" defaultValue="" name="Edad del conductor" nullable="0" physicalName="Edad del conductor" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL56" populated="true" UUID="87acb835-7144-41fd-b4a7-75d5f666ad37" autoIncrement="false" autoIncrementSequenceName="Seguro_Auto_Cobertura_seq" defaultValue="" name="Cobertura" nullable="0" physicalName="Cobertura" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL57" populated="true" UUID="ee796808-65c5-4656-9885-dedb6107402d" autoIncrement="false" autoIncrementSequenceName="Seguro_Auto_Prima_seq" defaultValue="" name="Prima" nullable="0" physicalName="Prima" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB513" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB512" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB514" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX58" populated="true" UUID="9290cc84-df2c-4406-9eab-e4821a1ffc45" clustered="false" name="Seguro_Auto_pk" physicalName="Seguro_Auto_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC59" populated="true" UUID="f57f80d7-00ca-44da-96ac-9166c7bccaf7" ascendingOrDescending="UNSPECIFIED" column-ref="COL52" name="SA_ID" physicalName="SA_ID" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB60" populated="true" UUID="1621791d-eb28-4ea2-b131-92ba4962f98d" name="Contrato_Seguro_Auto" objectType="TABLE" physicalName="Contrato_Seguro_Auto" >
+   <remarks></remarks>
+   <folder id="FOLTAB601" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL61" populated="true" UUID="f8318a8c-29ee-45b3-93ca-0982e69d7cd5" autoIncrement="false" autoIncrementSequenceName="Seguro_Auto_SA_ID_seq" defaultValue="" name="SA_ID" nullable="0" physicalName="SA_ID" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL62" populated="true" UUID="453570c9-cbe5-4c48-b4ae-11c78c584049" autoIncrement="false" autoIncrementSequenceName="Agente_IFE_Agente_seq" defaultValue="" name="IFE_Agente" nullable="0" physicalName="IFE_Agente" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL63" populated="true" UUID="564e34bb-87fa-4a09-8f11-b3d46e12f09c" autoIncrement="false" autoIncrementSequenceName="Cliente_IFE_Cliente_seq" defaultValue="" name="IFE_Cliente" nullable="0" physicalName="IFE_Cliente" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL64" populated="true" UUID="7dfb32f3-cf81-4ad3-b6aa-1adc88c5f622" autoIncrement="false" autoIncrementSequenceName="Contrato_Seguro_Auto_Fecha_seq" defaultValue="" name="Fecha" nullable="0" physicalName="Fecha" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL65" populated="true" UUID="696f3552-fdb7-4770-a57f-01c0c8bd7244" autoIncrement="false" autoIncrementSequenceName="Contrato_Seguro_Auto_Matricula_seq" defaultValue="" name="Matricula" nullable="0" physicalName="Matricula" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL66" populated="true" UUID="32f17d0d-812f-4a0f-b293-aa588e7bc356" autoIncrement="false" autoIncrementSequenceName="Contrato_Seguro_Auto_Recargos_seq" defaultValue="" name="Recargos" nullable="0" physicalName="Recargos" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL67" populated="true" UUID="013fae86-cfc8-452a-aa2a-2d1fba4433d5" autoIncrement="false" autoIncrementSequenceName="Contrato_Seguro_Auto_Descuentos_seq" defaultValue="" name="Descuentos" nullable="0" physicalName="Descuentos" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB603" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB602" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB604" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX68" populated="true" UUID="4b636128-d92e-4dd9-9494-202ee9abd2cb" clustered="false" name="Contrato_Seguro_Auto_pk" physicalName="Contrato_Seguro_Auto_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC69" populated="true" UUID="d672c053-7749-4a9a-af5b-a767beb803c3" ascendingOrDescending="UNSPECIFIED" column-ref="COL61" name="SA_ID" physicalName="SA_ID" />
+     <index-column id="IDC70" populated="true" UUID="0d9851ba-18fb-4543-99ae-737d4eb84481" ascendingOrDescending="UNSPECIFIED" column-ref="COL62" name="IFE_Agente" physicalName="IFE_Agente" />
+     <index-column id="IDC71" populated="true" UUID="44eb460e-9152-49cb-8141-941dacec7724" ascendingOrDescending="UNSPECIFIED" column-ref="COL63" name="IFE_Cliente" physicalName="IFE_Cliente" />
+    </index>
+   </folder>
+  </table>
+  <relationships>
+   <relationship id="REL72" populated="true" UUID="03d80a1d-99b6-4e68-b5a3-2186d006f4df" deferrability="7" deleteRule="3" fk-table-ref="TAB9" fkCardinality="7" identifying="true" name="Seguro_Hogar_Contrato_seguro_hogar_fk" physicalName="Seguro_Hogar_Contrato_seguro_hogar_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP73" populated="true" UUID="3b3dd09a-3ff9-4239-83cd-51ea31e9ac96" fk-column-ref="COL10" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   </relationship>
+   <relationship id="REL74" populated="true" UUID="142ffa8b-e131-420d-81dd-caca142dd23c" deferrability="7" deleteRule="3" fk-table-ref="TAB9" fkCardinality="7" identifying="true" name="Cliente_Contrato_seguro_hogar_fk" physicalName="Cliente_Contrato_seguro_hogar_fk" pk-table-ref="TAB19" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP75" populated="true" UUID="e19e2b05-af33-42e5-bf25-e5de541c50f0" fk-column-ref="COL11" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL20" />
+   </relationship>
+   <relationship id="REL76" populated="true" UUID="1dd6e371-a919-4b9a-a67c-988f39497790" deferrability="7" deleteRule="3" fk-table-ref="TAB41" fkCardinality="7" identifying="true" name="Cliente_Contrato_Seguro_Vida_fk" physicalName="Cliente_Contrato_Seguro_Vida_fk" pk-table-ref="TAB19" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP77" populated="true" UUID="697f0beb-4d7f-478d-9d07-99b6fc34188c" fk-column-ref="COL43" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL20" />
+   </relationship>
+   <relationship id="REL78" populated="true" UUID="fff17516-ab7b-4c8f-be72-075aeac43b2f" deferrability="7" deleteRule="3" fk-table-ref="TAB60" fkCardinality="7" identifying="true" name="Cliente_Contrato_Seguro_Auto_fk" physicalName="Cliente_Contrato_Seguro_Auto_fk" pk-table-ref="TAB19" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP79" populated="true" UUID="fcd7b0f3-dc98-4f1b-8171-c9695276d4de" fk-column-ref="COL63" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL20" />
+   </relationship>
+   <relationship id="REL80" populated="true" UUID="6c3cbfca-a5bc-4162-8dca-cfa81d03956c" deferrability="7" deleteRule="3" fk-table-ref="TAB9" fkCardinality="7" identifying="true" name="Agente_Contrato_seguro_hogar_fk" physicalName="Agente_Contrato_seguro_hogar_fk" pk-table-ref="TAB26" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP81" populated="true" UUID="84227374-afc1-446d-8b55-8aa4f34b95ed" fk-column-ref="COL12" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL27" />
+   </relationship>
+   <relationship id="REL82" populated="true" UUID="06c92c48-01f9-4072-8f5a-2cf3d180b344" deferrability="7" deleteRule="3" fk-table-ref="TAB41" fkCardinality="7" identifying="true" name="Agente_Contrato_Seguro_Vida_fk" physicalName="Agente_Contrato_Seguro_Vida_fk" pk-table-ref="TAB26" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP83" populated="true" UUID="6c3ee708-fda7-4c4e-9352-b7e5c19c70e6" fk-column-ref="COL44" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL27" />
+   </relationship>
+   <relationship id="REL84" populated="true" UUID="dd9c5721-098f-4c3f-8e4f-f9cf09ba9a87" deferrability="7" deleteRule="3" fk-table-ref="TAB60" fkCardinality="7" identifying="true" name="Agente_Contrato_Seguro_Auto_fk" physicalName="Agente_Contrato_Seguro_Auto_fk" pk-table-ref="TAB26" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP85" populated="true" UUID="5c449274-8efa-49a7-a041-0a03b4f2ce2b" fk-column-ref="COL62" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL27" />
+   </relationship>
+   <relationship id="REL86" populated="true" UUID="ac27d6b8-57fe-44fb-abc0-8d3e2f04a1ab" deferrability="7" deleteRule="3" fk-table-ref="TAB41" fkCardinality="7" identifying="true" name="Seguro_Vida_Contrato_Seguro_Vida_fk" physicalName="Seguro_Vida_Contrato_Seguro_Vida_fk" pk-table-ref="TAB33" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP87" populated="true" UUID="da45c0b0-a4e0-4228-bf52-a1434093aa91" fk-column-ref="COL42" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL34" />
+   </relationship>
+   <relationship id="REL88" populated="true" UUID="cc1a3d25-c8eb-462d-9b56-753fdb8c5482" deferrability="7" deleteRule="3" fk-table-ref="TAB60" fkCardinality="7" identifying="true" name="Seguro_Auto_Contrato_Seguro_Auto_fk" physicalName="Seguro_Auto_Contrato_Seguro_Auto_fk" pk-table-ref="TAB51" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP89" populated="true" UUID="994e79b5-a50d-411f-9708-447e057c21b9" fk-column-ref="COL61" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL52" />
+   </relationship>
+  </relationships>
+ </target-database>
+ <ddl-generator type="ca.sqlpower.architect.ddl.GenericDDLGenerator" allow-connection="true"> </ddl-generator>
+ <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
+ <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
+ <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+  <table-pane table-ref="TAB1" x="452" y="112" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB9" x="436" y="283" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB19" x="249" y="489" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB26" x="470" y="453" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB33" x="435" y="794" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB41" x="431" y="633" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB51" x="833" y="469" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB60" x="836" y="643" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL72" pkConnection="0.5" fkConnection="0.4861878453038674" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL74" pkConnection="0.7803468208092486" fkConnection="0.20994475138121546" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL80" pkConnection="0.41954022988505746" fkConnection="0.5911602209944752" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL86" pkConnection="0.5" fkConnection="0.4198895027624309" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL76" pkConnection="0.7630057803468208" fkConnection="0.22099447513812154" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL82" pkConnection="0.40804597701149425" fkConnection="0.6077348066298343" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL88" pkConnection="0.5056179775280899" fkConnection="0.48066298342541436" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL84" pkConnection="0.9080459770114943" fkConnection="0.0" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="36"/>
+  <table-link relationship-ref="REL78" pkConnection="0.8947368421052632" fkConnection="0.2097902097902098" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+ </play-pen>
+ <critic-manager>
+  <critic-grouping platformType="Generic" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PrimaryKeyCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.RelationshipMappingTypeCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.EmptyRelationshipCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericSequenceNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetDefaultOnColumnWithNoDefaultCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetNullOnNonNullableColumnCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DuplicateNameCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="DB2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DB2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="H2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.H2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="HSQLDB" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.HSQLDBUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="MySQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLCommentCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="Oracle" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OraclePhysicalNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="PostgreSQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PostgreSQLReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerUnsupportedFeaturesCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2000" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2000UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2005" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2005UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+ </critic-manager>
+ <profiles topNCount="10">
+  </profiles>
+  <olap>
+  </olap>
+  <olap-gui>
+  </olap-gui>
+</architect-project>

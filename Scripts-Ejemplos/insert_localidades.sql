@@ -1,0 +1,2 @@
+﻿insert into Localidades (CodLoc, Nombre, Censo, HAbitantes, CodProv) values (005, 'Alcala de Henares', 137938, 176434, 28), (014,'Arganda del Rey', 24879, 33432, 28), (078, 'Cuenca', 37109, 46341, 16), (130, 'Guadalajara', 53622, 68248, 19), (069, 'Madrid', 2337580, 2938723, 28), (121, 'Ocaña', 4862, 6441, 45), (123
+, 'Rivas Vaciamadrid', 26260, 35742, 28), (203, 'Tarancon', 8956, 11786, 16), (148, 'Torrejon de Ardoz', 74703, 97887, 28)

@@ -1,0 +1,1 @@
+﻿insert into bares (codb, nombre, cif, localidad) values (1, 'Stop', '11111111x', 'Villa Botijo'), (2, 'Las vegas', '22222222Y', 'Villa Boltijo');

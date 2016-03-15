@@ -1,0 +1,1 @@
+﻿insert into reparto (code, codb, codc, fecha, cantidad) values (1,1,1, '2005-10-21', 240);

@@ -1,0 +1,1 @@
+﻿insert into cervezas (codc, envase, capacidad, stock) values (2, 'Botella', 0.33, 1200), (3, 'Lata', 0.33, 1400), (4,'Barril', 12, 1500);
