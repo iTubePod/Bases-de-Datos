@@ -1,11 +1,12 @@
 --Hector Mauricio Gonzalez Coello
 --A01328258
---Pregunta 1
+--
+--Question 1
 SELECT nombre FROM empleados WHERE code In(
 	SELECT code FROM reparto WHERE fecha between '10/17/05' AND '10/23/05'
 	AND codb IN (
 		SELECT codb FROM bares WHERE nombre='Stop' ))
---Pregunta 2
+--Question 2
 SELECT CIF, nombre
 From Bares 
 Where CodB in (
@@ -18,7 +19,7 @@ Where CodB in (
 	)
 )
 Order by Localidad
---Pregunta 3
+--Question 3
 SELECT b.nombre, c.envase, c.capacidad, r.fecha, r.cantidad
 From bares b, cervezas c, reparto r, empleados e
 Where 
@@ -26,7 +27,7 @@ Where
 	e.code = r.code AND
 	c.codc = r.codc AND
 	b.codb = r.codb
---Pregunta 4
+--Question 4
 SELECT *
 From Bares
 Where CodB in(
@@ -38,7 +39,7 @@ Where CodB in(
 		Where Envase = 'Botella' AND (Capacidad = 0.2 OR Capacidad = 0.33) 
 	)
 )
---Pregunta 5
+--Question 5
 SELECT Nombre
 From Empleados
 Where Code in (
@@ -62,7 +63,7 @@ Where Code in (
 		Where nombre = 'Las Vegas'
 	)
 )
---Pregunta 6
+--Question 6
 SELECT e.nombre, COUNT (r.code)
 From reparto r, empleados e, bares b
 Where
@@ -70,15 +71,19 @@ Where
 	b.codb=r.codb AND
 	b.localidad != 'Villa Botijo'
 Group by (e.nombre)
---Pregunta 7
-SELECT bares.nombre
-FROM bares,reparto,cervezas
-WHERE bares.codb = reparto.codb AND cervezas.codc = reparto.codc
-ORDER BY reparto.cantidad * cervezas.capacidad
+
+--Question 7
+SELECT Nombre, Localidad
+From Bares, reparto, cervezas
+Where 
+	Bares.CodB = reparto.CodB AND
+	cervezas.CodC = reparto.CodC
+Group By Nombre, Localidad, cervezas.capacidad*reparto.cantidad
+Order By cervezas.capacidad * reparto.cantidad DESC
 LIMIT 1
 
---Pregunta 8
-SELECT Nombre, Localidad
+--Question 8
+SELECT Nombre
 From Bares
 Where CodB in (
 	Select CodB 
@@ -94,8 +99,18 @@ Where CodB in (
 		WHERE Capacidad < 1 
 	)
 )
---Pregunta 9
+--Question 9
+UPDATE EMPLEADOS SET sueldo=sueldo*1.05
+WHERE CodE in (
+SELECT CodE
+FROM (SELECT COUNT(DISTINCT fecha) AS x, CodE 
+FROM reparto 
+GROUP BY CodE) as y
+Group by CodE
+Order by Max(x) DESC
+LIMIT 1
+)
 
---Pregunta 10
+--Question 10
 INSERT INTO reparto (codc, codb, code, fecha, cantidad)
 VALUES (3, 1, 2, '10/26/05', 48);
