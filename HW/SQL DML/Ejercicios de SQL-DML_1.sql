@@ -6,6 +6,7 @@ SELECT nombre FROM empleados WHERE code In(
 	SELECT code FROM reparto WHERE fecha between '10/17/05' AND '10/23/05'
 	AND codb IN (
 		SELECT codb FROM bares WHERE nombre='Stop' ))
+
 --Question 2
 SELECT CIF, nombre
 From Bares 
@@ -19,6 +20,7 @@ Where CodB in (
 	)
 )
 Order by Localidad
+
 --Question 3
 SELECT b.nombre, c.envase, c.capacidad, r.fecha, r.cantidad
 From bares b, cervezas c, reparto r, empleados e
@@ -27,6 +29,7 @@ Where
 	e.code = r.code AND
 	c.codc = r.codc AND
 	b.codb = r.codb
+
 --Question 4
 SELECT *
 From Bares
@@ -39,6 +42,7 @@ Where CodB in(
 		Where Envase = 'Botella' AND (Capacidad = 0.2 OR Capacidad = 0.33) 
 	)
 )
+
 --Question 5
 SELECT Nombre
 From Empleados
@@ -63,6 +67,7 @@ Where Code in (
 		Where nombre = 'Las Vegas'
 	)
 )
+
 --Question 6
 SELECT e.nombre, COUNT (r.code)
 From reparto r, empleados e, bares b
