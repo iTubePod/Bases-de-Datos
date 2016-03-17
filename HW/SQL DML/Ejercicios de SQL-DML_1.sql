@@ -71,7 +71,11 @@ Where
 	b.localidad != 'Villa Botijo'
 Group by (e.nombre)
 --Pregunta 7
-
+SELECT bares.nombre
+FROM bares,reparto,cervezas
+WHERE bares.codb = reparto.codb AND cervezas.codc = reparto.codc
+ORDER BY reparto.cantidad * cervezas.capacidad
+LIMIT 1
 
 --Pregunta 8
 SELECT Nombre, Localidad
@@ -90,3 +94,8 @@ Where CodB in (
 		WHERE Capacidad < 1 
 	)
 )
+--Pregunta 9
+
+--Pregunta 10
+INSERT INTO reparto (codc, codb, code, fecha, cantidad)
+VALUES (3, 1, 2, '10/26/05', 48);
