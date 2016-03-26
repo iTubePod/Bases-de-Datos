@@ -78,13 +78,14 @@ Where
 Group by (e.nombre)
 
 --Question 7
-SELECT Nombre, Localidad
+
+SELECT Nombre, Localidad, SUM(reparto.cantidad*cervezas.capacidad) as "Litros"
 From Bares, reparto, cervezas
 Where 
 	Bares.CodB = reparto.CodB AND
 	cervezas.CodC = reparto.CodC
-Group By Nombre, Localidad, cervezas.capacidad*reparto.cantidad
-Order By cervezas.capacidad * reparto.cantidad DESC
+Group By Nombre, Localidad
+Order By "Litros" DESC
 LIMIT 1
 
 --Question 8
@@ -107,13 +108,13 @@ Where CodB in (
 --Question 9
 UPDATE EMPLEADOS SET sueldo=sueldo*1.05
 WHERE CodE in (
-SELECT CodE
-FROM (SELECT COUNT(DISTINCT fecha) AS x, CodE 
-FROM reparto 
-GROUP BY CodE) as y
-Group by CodE
-Order by Max(x) DESC
-LIMIT 1
+	SELECT CodE
+	FROM (SELECT COUNT(DISTINCT fecha) AS x, CodE 
+	FROM reparto 
+	GROUP BY CodE) as y
+	Group by CodE
+	Order by Max(x) DESC
+	LIMIT 1
 )
 
 --Question 10

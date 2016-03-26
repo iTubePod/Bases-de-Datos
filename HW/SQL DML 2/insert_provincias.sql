@@ -1,0 +1,1 @@
+﻿insert into Provincias (CodProv, NombreP, Comunidad) values (16, 'Cuenca', 'CLM'), (19, 'Guadalajara', 'CLM'),(28, 'Madrid', 'Madrid'),(45, 'Toledo', 'CLM') 
