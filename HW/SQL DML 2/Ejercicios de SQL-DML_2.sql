@@ -5,8 +5,9 @@
 
 
 --QUESTION 1
-SELECT Nombre 
-FROM Localidades
+SELECT Comunidad 
+FROM Provincias, localidades
+WHERE Provincias.CodProv=Localidades.CodProv
 ORDER BY Habitantes ASC
 LIMIT 1
 
