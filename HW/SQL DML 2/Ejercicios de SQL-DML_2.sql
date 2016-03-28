@@ -8,7 +8,7 @@
 SELECT Comunidad 
 FROM Provincias, localidades
 WHERE Provincias.CodProv=Localidades.CodProv
-ORDER BY Habitantes DESC
+ORDER BY Habitantes ASC
 LIMIT 1
 
 --QUESTION 2
