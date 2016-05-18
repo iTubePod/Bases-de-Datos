@@ -73,7 +73,9 @@ CREATE TRIGGER update_reparto
 	EXECUTE PROCEDURE update_ureparto();
 
 --2
-------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+
+--DELETES EMPLOYEE
 CREATE OR REPLACE FUNCTION update_empleado() RETURNS TRIGGER AS $update_empleado$
 BEGIN
 	DELETE
@@ -87,6 +89,7 @@ CREATE TRIGGER delete_empleado
 	FOR EACH ROW
 	EXECUTE PROCEDURE update_empleado();
 
+--DELETES BARS
 CREATE OR REPLACE FUNCTION update_bares() RETURNS TRIGGER AS $update_bares$
 BEGIN
 	DELETE
@@ -100,6 +103,7 @@ CREATE TRIGGER delete_bares
 	FOR EACH ROW
 	EXECUTE PROCEDURE update_bares();
 
+--DELETES BEERS
 CREATE OR REPLACE FUNCTION update_cervezas() RETURNS TRIGGER AS $update_cervezas$
 BEGIN
 	DELETE
